@@ -6,7 +6,28 @@ using System.Threading.Tasks;
 
 namespace ListaDeAnimais.Classes
 {
-    class Class1
+    class Animal
     {
+        public string Nome { get; set; }
+    }
+    class mamifero : Animal
+    {
+        public int QuantidadeDeMamas { get; set; }
+    }
+
+    class Reptil : Animal
+    {
+        public bool ControlaTemperaturaDoCorpo { get; set; } = false;
+
+    }
+
+    class Ave : Animal
+    {
+        public bool TemPena { get; set; } = true;
+    }
+
+    class Peixe : Animal
+    {
+        public int QuantidadeDeNadadeiras { get; set; }
     }
 }
